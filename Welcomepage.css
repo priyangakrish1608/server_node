@@ -1,0 +1,166 @@
+/*.container{
+    width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #e6dace 0%,
+    #e6dace 50%,
+    white 50%,
+    white 100%)
+
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    overflow: scroll;
+}
+.items::-webkit-scrollbar {
+    display: none;
+}
+.menuitems{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0%;
+}
+.items-menu{
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+.items-menu:hover{
+    color: white;
+    background-color: black;
+}
+.bluebox{
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    margin-right: 5px;
+    margin-top: 6px;
+    border-radius: 50px;
+}
+.name{
+    display: flex;
+    font-size: 25px;
+    padding-left: 40px;
+}
+.myname{
+   font-family: 'normal normal bold 25px/1.4em poppins-semibold,poppins,sans-serif';
+}
+.footer{
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    height: 100px;}
+.active {
+    background-color: black;
+    color: white;
+  }
+  @media only screen and (max-width: 480px){
+    .menuitems{
+        display: grid;
+        justify-content: space-between;
+        padding-top: 40px;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        top: 0%;
+    }
+  }*/
+
+
+  /* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure container takes at least the full viewport height */
+  }
+  
+  /* Header styles */
+  .meninblack {
+    flex: 1; /* Allow the content area to expand */
+    display: flex;
+    flex-direction: column;
+    background-color: #e6dace; /* Set background color */
+  }
+  
+  .menuitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .bluebox {
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    margin-right: 5px;
+    margin-top: 6px;
+    border-radius: 50px;
+  }
+  
+  .myname {
+    font-family: 'normal normal bold 25px/1.4em poppins-semibold,poppins,sans-serif';
+    font-size: 25px;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    overflow: hidden; /* Hide the scrollbars */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .items-menu {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+  }
+  
+  .items-menu:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  /* Active button styles */
+  .active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Footer styles */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2b2828; /* Set background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
